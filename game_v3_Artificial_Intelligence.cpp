@@ -230,22 +230,6 @@ void printboard(char board[]){
             counter = 0;
             turn = 15;
         }
-         for (int i = 0; i < size; i++){
-            for (int j = 0; j < size; j++){
-               if (board[j * size + i] == '0')
-                    counter++;
-                if(board[j * size + i] == ' ')
-
-                    turn = j * size + i;
-            }
-
-            if (counter > 0 & turn != 15) {
-                    cout<<"for 6\n";
-                return turn + 1;
-            }
-            counter = 0;
-            turn = 15;
-        }
 
 
     return 9;
@@ -303,7 +287,7 @@ if (true) {
         }
         else
             cout <<"\nYour move is "<< turn<<"\n" << endl;
-        //clrscr();
+        clrscr();
         if (i%2 == 0){
             board[turn-1]='X';}
             else{
